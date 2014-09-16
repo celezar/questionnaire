@@ -1,0 +1,11 @@
+@import "addons.scss";
+@import "questionnaire.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in questionnaire.scss */
+.questionnaire {
+  @include addons;
+
+  // Include questionnaire theme styles in your theme
+  @include questionnaire;
+}
